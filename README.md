@@ -8,3 +8,5 @@ This Frontend will fetch content from [Frequency of word occurrence server](http
 * bootstrap
 * gulp
 
+### Quick Test.
+this app hosted on [heroku](https://fathomless-river-47829.herokuapp.com/words).
