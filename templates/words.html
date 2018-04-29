@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>Search Word Occurrence</h1>
+  <form class='form-inline' ng-submit='search(q)'>
+    <div class="form-group">
+      <input class='form-control' type="number" ng-model='q'>
+    </div>
+    <input type="submit" class='btn btn-primary' value='Search'>
+  </form>
+  <table class="table">
+    <tr>
+      <th> Sr.No </th>
+      <th> Word </th>
+      <th> Count </th>
+    </tr>
+    <tr ng-repeat="item in words">
+      <td> {{$index + 1}}</td>
+      <td> {{item.word}}</td>
+      <td> {{item.count}}</td>
+    </tr>
+  </table>
+  <!-- <ul class='users'>
+    <li ng-repeat="user in users">
+      <a href="/users/{{user.login}}">
+        {{user.login}}
+      </a>
+    </li>
+  </ul> -->
+</div>
